@@ -16,5 +16,25 @@ namespace BusinessRulesEngine.Test
             Assert.AreEqual(result, 1);
 
         }
+
+        [TestMethod]
+        public void RoyaltyDepartment_ReturnsTrue()
+        {
+            RoyaltyDepartment royalty = new RoyaltyDepartment();
+
+            var result = royalty.Royalty(true);
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void RoyaltyDepartment_ReturnsFalse()
+        {
+            RoyaltyDepartment royalty = new RoyaltyDepartment();
+
+            var result = royalty.Royalty(false);
+
+            Assert.IsFalse(result);
+        }
     }
 }

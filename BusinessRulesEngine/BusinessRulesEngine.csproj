@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="PhysicalProduct.cs" />
     <Compile Include="ProductDetails.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoyaltyDepartment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
