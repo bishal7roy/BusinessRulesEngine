@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessRulesEngine
 {
-    class Video
+    public class Video
     {
         public Video(string videoType)
         {
