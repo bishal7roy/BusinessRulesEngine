@@ -19,7 +19,9 @@ namespace BusinessRulesEngine
 
                 if (inputValue == 1)            //This will be called when payment is done for Physical Product
                     new PhysicalProduct();
-                
+                else if (inputValue == 2)       //This will be called when payment is done for Book
+                    new Book();
+
                 else
                 {
                     Console.WriteLine("Wrong Input...");
