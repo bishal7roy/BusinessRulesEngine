@@ -33,6 +33,9 @@ namespace BusinessRulesEngine
                     emailID = Console.ReadLine();
                     new Membership("Upgrade Membership", emailID);
                 }
+                else if (inputValue == 5)       //This will be called when payment is done for Video (Learning to Ski)
+                    new Video("Video (Learning to Ski)");
+                
 
                 else
                 {
