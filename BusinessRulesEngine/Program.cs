@@ -21,6 +21,18 @@ namespace BusinessRulesEngine
                     new PhysicalProduct();
                 else if (inputValue == 2)       //This will be called when payment is done for Book
                     new Book();
+                else if (inputValue == 3)       //This will be called when payment is done for New Membership
+                {
+                    Console.WriteLine("Enter registered EmailID");
+                    emailID = Console.ReadLine();
+                    new Membership("New Membership", emailID);
+                }
+                else if (inputValue == 4)       //This will be called when payment is done for Upgrading Membership
+                {
+                    Console.WriteLine("Enter registered EmailID");
+                    emailID = Console.ReadLine();
+                    new Membership("Upgrade Membership", emailID);
+                }
 
                 else
                 {
