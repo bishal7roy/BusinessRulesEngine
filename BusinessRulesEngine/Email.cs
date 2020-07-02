@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace BusinessRulesEngine
 {
-    class Email
+    public class Email
     {
-        Console.WriteLine("Email Team Notified.");
+        public Email()
+        {
+            Console.WriteLine("Email Team Notified.");
+        }
     }
 }
