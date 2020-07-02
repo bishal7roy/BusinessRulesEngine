@@ -10,6 +10,21 @@ namespace BusinessRulesEngine
     {
         static void Main(string[] args)
         {
+            ProductDetails productDetails = new ProductDetails();
+            string emailID = "";
+
+            while (true)
+            {
+                int inputValue = productDetails.GetInputValueFromCustomer();
+
+                if (inputValue == 1)            //This will be called when payment is done for Physical Product
+                    new PhysicalProduct();
+                
+                else
+                {
+                    Console.WriteLine("Wrong Input...");
+                }
+            }
         }
     }
 }
